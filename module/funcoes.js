@@ -64,8 +64,18 @@ const getDadosComuns = function(dadoPesquisa){
     return dadosNaoSensiveis 
 }
 
-const getDadosConversas = function(){
+const getDadosConversas = function(contato){
+    let historicoMsg = []
+    let status = false
 
+    whatsApp.contatos['whats-users'].forEach(function(usuario){
+
+    if (String(usuario.contacts).toUpperCase() == String(contato).toUpperCase()){
+        historicoMsg.push({
+            
+        })
+    }
+    }
 }
 
 console.log(getDadosComuns('Ricky'))
