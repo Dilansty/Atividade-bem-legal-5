@@ -72,10 +72,15 @@ const getDadosConversas = function(contato){
 
     if (String(usuario.contacts).toUpperCase() == String(contato).toUpperCase()){
         historicoMsg.push({
-            
+            nome:       usuario.name,
+            descricao:  usuario.description,
+            foto:       usuario.image,
+ 
+            mensagem:   usuario.messages
+
         })
     }
-    }
+    })
 }
 
 console.log(getDadosComuns('Ricky'))
